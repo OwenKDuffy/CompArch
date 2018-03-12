@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Feb 19 11:16:51 2018
+# Process ID: 4504
+# Current directory: U:/CS2022/Assignment1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5276 U:\CS2022\Assignment1\Assignment1.xpr
+# Log file: U:/CS2022/Assignment1/vivado.log
+# Journal file: U:/CS2022/Assignment1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/CS2022/Assignment1/Assignment1.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1

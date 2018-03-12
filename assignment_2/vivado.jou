@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 12 15:35:40 2018
+# Process ID: 3336
+# Current directory: U:/CS2022/assignment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8772 U:\CS2022\assignment_2\assignment_2.xpr
+# Log file: U:/CS2022/assignment_2/vivado.log
+# Journal file: U:/CS2022/assignment_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/CS2022/assignment_2/assignment_2.xpr
+update_compile_order -fileset sources_1
+close [ open {U:/CS2022/assignment_2/assignment_2.srcs/sources_1/new/B input Logic.vhd} w ]
+add_files {{U:/CS2022/assignment_2/assignment_2.srcs/sources_1/new/B input Logic.vhd}}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design

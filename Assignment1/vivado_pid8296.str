@@ -1,0 +1,268 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 8296
+License: Customer
+
+Current time: 	Mon Mar 05 11:03:02 GMT 2018
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 297 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	duffyow
+User home directory: C:/Users/duffyow
+User working directory: U:/CS2022/Assignment1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: \\tholos.itserv.scss.tcd.ie\ugrad\duffyow\AppData\Roaming/Xilinx/Vivado\2017.4\vivado.xml
+Vivado preferences directory: \\tholos.itserv.scss.tcd.ie\ugrad\duffyow\AppData\Roaming/Xilinx/Vivado\2017.4\
+Vivado layouts directory: \\tholos.itserv.scss.tcd.ie\ugrad\duffyow\AppData\Roaming\Xilinx\Vivado\2017.4\layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	U:/CS2022/Assignment1/vivado.log
+Vivado journal file location: 	U:/CS2022/Assignment1/vivado.jou
+Engine tmp dir: 	U:/CS2022/Assignment1/.Xil/Vivado-8296-2XMSM62
+
+GUI allocated memory:	183 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 530 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 43 MB (+42961kb) [00:00:04]
+// [Engine Memory]: 490 MB (+362002kb) [00:00:04]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: U:\CS2022\Assignment1\Assignment1.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project U:/CS2022/Assignment1/Assignment1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project U:/CS2022/Assignment1/Assignment1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// [GUI Memory]: 53 MB (+8355kb) [00:00:06]
+// [Engine Memory]: 530 MB (+16124kb) [00:00:06]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 560 MB (+4542kb) [00:00:07]
+// [GUI Memory]: 69 MB (+13046kb) [00:00:08]
+// [GUI Memory]: 80 MB (+8442kb) [00:00:08]
+// [Engine Memory]: 594 MB (+5547kb) [00:00:08]
+// [GUI Memory]: 89 MB (+4585kb) [00:00:08]
+// [GUI Memory]: 97 MB (+3996kb) [00:00:08]
+// [Engine Memory]: 638 MB (+15591kb) [00:00:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 653 MB. GUI used memory: 41 MB. Current time: 3/5/18 11:03:05 AM GMT
+// Project name: Assignment1; location: U:/CS2022/Assignment1; part: xc7s100fgga484-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 5); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, sim.vhd]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, sim.vhd]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files, sim.vhd]", 6, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files U:/CS2022/Assignment1/Assignment1.srcs/sim_1/new/sim.vhd] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 U:/CS2022/Assignment1/Assignment1.srcs/sim_1/new/sim.vhd 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_file(Behavioral) (reg_file.vhd)]", 5); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, reg_file(Behavioral) (reg_file.vhd)]", 5); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reg_file(Behavioral) (reg_file.vhd)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, reg_file(Behavioral) (reg_file.vhd)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectCodeEditor("reg_file.vhd", 882, 371); // cd (w, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Mar  5 11:04:00 2018] Launched synth_1... Run output will be captured here: U:/CS2022/Assignment1/Assignment1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// [Engine Memory]: 684 MB (+14237kb) [00:01:10]
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_Cancel", "Cancel"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 684 MB. GUI used memory: 44 MB. Current time: 3/5/18 11:04:10 AM GMT
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "xc7s100fgga484-1"); // h (N, cj)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 706 MB. GUI used memory: 57 MB. Current time: 3/5/18 11:04:30 AM GMT
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, v)
+// c (v): Select Device: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Select Device"); // c (v)
+// [GUI Memory]: 106 MB (+4190kb) [00:01:50]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// [GUI Memory]: 121 MB (+10328kb) [00:01:51]
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// [GUI Memory]: 138 MB (+11323kb) [00:01:56]
+// [Engine Memory]: 729 MB (+11543kb) [00:01:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 747 MB. GUI used memory: 64 MB. Current time: 3/5/18 11:04:55 AM GMT
+setFileChooser("U:/CS2022/Vivado_Tutorial/Tutorial_Created_Data/project_bft/project_bft.xpr");
+// Opening Vivado Project: U:/CS2022/Vivado_Tutorial/Tutorial_Created_Data/project_bft/project_bft.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project U:/CS2022/Vivado_Tutorial/Tutorial_Created_Data/project_bft/project_bft.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [Engine Memory]: 775 MB (+10241kb) [00:02:12]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 777 MB. GUI used memory: 77 MB. Current time: 3/5/18 11:05:11 AM GMT
+// Tcl Message: open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 875.918 ; gain = 23.477 
+// Project name: project_bft; location: U:/CS2022/Vivado_Tutorial/Tutorial_Created_Data/project_bft; part: xc7k70tfbg484-2
+// 'i' command handler elapsed time: 21 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// Elapsed time: 171 seconds
+closeMainWindow("project_bft - [U:/CS2022/Vivado_Tutorial/Tutorial_Created_Data/project_bft/project_bft.xpr] - Vivado 2017.4"); // cj
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// x (cj): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Close Project : addNotify
+dismissDialog("Close Project"); // x (cj)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 781 MB. GUI used memory: 77 MB. Current time: 3/5/18 11:08:06 AM GMT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bs (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LICENSE, "Obtain a License Key..."); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_LICENSE
+// Elapsed time: 25 seconds
+dismissDialog("Settings"); // v (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Mar  5 11:08:41 2018] Launched synth_1... Run output will be captured here: U:/CS2022/Assignment1/Assignment1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 25 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bs (cj):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Mar  5 11:09:20 2018] Launched synth_1... Run output will be captured here: U:/CS2022/Assignment1/Assignment1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 28 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// x (cj): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // x (cj)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7s100fgga484-1 Top: reg_file 
+// [Engine Memory]: 847 MB (+34617kb) [00:07:01]
