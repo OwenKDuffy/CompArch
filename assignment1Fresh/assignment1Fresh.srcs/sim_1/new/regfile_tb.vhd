@@ -38,31 +38,26 @@ end regfile_tb;
 architecture Behavioral of regfile_tb is
 
 component regfile 
-    Port ( src : in STD_LOGIC_VECTOR(2 downto 0);
+ Port (    write : in STD_LOGIC;
            dst : in STD_LOGIC_VECTOR(2 downto 0); 
+           Asrc : in STD_LOGIC_VECTOR(2 downto 0);
+           Bsrc : in STD_LOGIC_VECTOR(2 downto 0);
            clock : in STD_LOGIC;
-           dataSrc : in STD_LOGIC;
            data : in STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_0 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_1 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_2 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_3 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_4 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_5 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_6 : out STD_LOGIC_VECTOR(15 downto 0);
-           reg_out_7 : out STD_LOGIC_VECTOR(15 downto 0)
+           Adata : out STD_LOGIC_VECTOR(15 downto 0);
+           Bdata : out STD_LOGIC_VECTOR(15 downto 0)    
            );
 end component;
 
-signal src, dst : STD_LOGIC_VECTOR(2 downto 0) := "000";
-signal clock, dataSrc : STD_LOGIC := '0';
-signal data, ro0, ro1, ro2, ro3, ro4, ro5, ro6, ro7 : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
+signal Asrc, Bsrc, dst : STD_LOGIC_VECTOR(2 downto 0) := "000";
+signal RW, clock, dataSrc : STD_LOGIC := '0';
+signal data, Aout, Bout: STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
 
 constant clockperiod : time := 2ns;
 
 begin
 
-uut : regfile port map(src, dst, clock, dataSrc, data, ro0, ro1, ro2, ro3, ro4, ro5, ro6, ro7);
+uut : regfile port map(RW, dst, Asrc, Bsrc, clock, data, Aout, Bout);
 clk_proc: process
     begin
         clock <= not clock;
@@ -72,7 +67,7 @@ clk_proc: process
     stim_proc : process
         begin
             --setarbitrary defaults
-            src <= "000";
+            Asrc <= "000";
             --load into r1
             dst <= "000";
             dataSrc <= '0';

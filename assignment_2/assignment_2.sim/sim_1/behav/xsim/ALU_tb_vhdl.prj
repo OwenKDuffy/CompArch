@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../assignment_2.srcs/sources_1/imports/new/ALU.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/ArithmeticUnit16bit.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/B input Logic.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/FullAdder.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/LogicUnit16bit.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/LogicUnitSlice.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/RippleCarryAdder.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/mux2.vhd" \
+"../../../../assignment_2.srcs/sources_1/new/mux4_1bit.vhd" \
+"../../../../assignment_2.srcs/sim_1/new/ALU_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,22 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 02/15/2018 02:45:57 PM
--- Design Name: 
--- Module Name: reg16 - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
 
 
 library IEEE;
@@ -43,14 +24,20 @@ entity reg16 is
 end reg16;
 
 architecture Behavioral of reg16 is
+signal output : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
+Q <= output;
+directOut <= output;
     process(clk)
     begin
         if(rising_edge(clk)) then
             if load = '1' then
-                Q<=D after 5 ns;
+                output<=D after 1 ns;
+            
             end if;
+        else
+            output <= output;
         end if;
     end process;
 

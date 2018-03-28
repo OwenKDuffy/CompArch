@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../assignment_2.srcs/sources_1/imports/new/decoder3to8.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/mux2.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/mux4.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/mux8.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/reg16.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/regfile.vhd" \
+"../../../../../assignment1Fresh/assignment1Fresh.srcs/sim_1/new/regfile_tb.vhd" \
+
+# Do not sort compile order
+nosort
