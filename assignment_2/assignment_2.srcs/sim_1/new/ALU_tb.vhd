@@ -55,9 +55,43 @@ begin
 uut : ALU port map (A, B, selector, V, C, G);
 stim_proc : process
     begin
-        A <= "0000000000000001";
-        B <= "0000000000000001";
+        A <= "0000000000001000";
+        B <= "0000000000000100";
+        --A
+        selector <= "0000";
+        wait for 15ns;
+        --A + 1
+        selector <= "0001";
+        wait for 15ns;
+        --A + B
         selector <= "0010";
+        wait for 15ns;
+        --A + B + 1
+        selector <= "0011";
+        wait for 15ns;
+        -- A + B'
+        selector <= "0100";
+        wait for 15ns;
+        -- A - B
+        selector <= "0101";
+        wait for 15ns;
+        -- A - 1
+        selector <= "0110";
+        wait for 15ns;
+        -- A
+        selector <= "0111";
+        wait for 15ns;
+        -- A & B
+        selector <= "1000";
+        wait for 15ns;
+        -- A | B
+        selector <= "1010";
+        wait for 15ns;
+        -- A XOR B
+        selector <= "1100";
+        wait for 15ns;
+        -- A'
+        selector <= "1110";
         wait for 15ns;
     end process;
 

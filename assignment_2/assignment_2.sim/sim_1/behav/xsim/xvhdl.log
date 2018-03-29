@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/User/OneDrive/Documents/CS2022/CompArch/assignment_2/assignment_2.srcs/sim_1/new/au_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity au_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "U:/CS2022/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/LogicUnit16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity LogicUnit16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "U:/CS2022/CompArch/assignment_2/assignment_2.srcs/sim_1/new/ALU_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU_tb

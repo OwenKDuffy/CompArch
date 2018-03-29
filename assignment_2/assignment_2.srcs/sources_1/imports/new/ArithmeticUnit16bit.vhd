@@ -61,8 +61,8 @@ end component;
     
 begin
     
-    bLogic : B_input_Logic port map (inB, selector, signalB);
-    RCA : RippleCarryAdder port map (inA, signalB,selector(0), output, carryOut);
+    bLogic : B_input_Logic port map (inB, selector(2 downto 1), signalB);
+    RCA : RippleCarryAdder port map (inA, signalB, selector(0), output, carryOut);
     
     
 end Behavioral;

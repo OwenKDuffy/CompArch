@@ -53,7 +53,7 @@ begin
     B : LogicUnitSlice port map(selection, inputA(14), inputB(14), output(14));
     C : LogicUnitSlice port map(selection, inputA(13), inputB(13), output(13));
     D : LogicUnitSlice port map(selection, inputA(12), inputB(12), output(12));
-    E : LogicUnitSlice port map(selection, inputA(11), inputB(11), output(1));
+    E : LogicUnitSlice port map(selection, inputA(11), inputB(11), output(11));
     F : LogicUnitSlice port map(selection, inputA(10), inputB(10), output(10));
     G : LogicUnitSlice port map(selection, inputA(9), inputB(9), output(9));
     H : LogicUnitSlice port map(selection, inputA(8), inputB(8), output(8));

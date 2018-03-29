@@ -40,13 +40,13 @@ component ArithmeticUnit16bit
     port(
             inA : in STD_LOGIC_VECTOR(15 downto 0);
             inB : in STD_LOGIC_VECTOR(15 downto 0);
-            selector : in STD_LOGIC_VECTOR(1 downto 0);
+            selector : in STD_LOGIC_VECTOR(2 downto 0);
             output : out STD_LOGIC_VECTOR(15 downto 0);
             carryOut: out STD_LOGIC
     );
 end component;
 signal A, B : STD_LOGIC_VECTOR (15 downto 0);
-signal selection : STD_LOGIC_VECTOR(1 downto 0);
+signal selection : STD_LOGIC_VECTOR(2 downto 0);
 signal Z : STD_LOGIC_VECTOR(15 downto 0);
 signal c : STD_LOGIC;
 begin
@@ -55,7 +55,29 @@ stim_proc : process
     begin
         A <= "0000000000000001";
         B <= "0000000000000001";
-        selection <= "10";
+        -- A
+        selection <= "000";
+        wait for 15ns;
+        -- A++
+        selection <= "001";
+        wait for 15ns;
+        -- A + B
+        selection <= "010";
+        wait for 15ns;
+        -- A + B + C = ?
+        selection <= "011";
+        wait for 15ns;
+        -- A + B'
+        selection <= "100";
+        wait for 15ns;
+        -- A - B
+        selection <= "101";
+        wait for 15ns;
+        -- A--
+        selection <= "110";
+        wait for 15ns;
+        -- A
+        selection <= "111";
         wait for 15ns;
     end process;
 
