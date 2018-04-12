@@ -33,11 +33,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity regfile is
     Port ( write : in STD_LOGIC;
-           dst : in STD_LOGIC_VECTOR(2 downto 0); 
-           Asrc : in STD_LOGIC_VECTOR(2 downto 0);
-           Bsrc : in STD_LOGIC_VECTOR(2 downto 0);
+           dst : in STD_LOGIC_VECTOR(3 downto 0); 
+           Asrc : in STD_LOGIC_VECTOR(3 downto 0);
+           Bsrc : in STD_LOGIC_VECTOR(3 downto 0);
            clock : in STD_LOGIC;
---           dataSrc : in STD_LOGIC;
+
            data : in STD_LOGIC_VECTOR(15 downto 0);
 --           reg_out_0 : out STD_LOGIC_VECTOR(15 downto 0);
 --           reg_out_1 : out STD_LOGIC_VECTOR(15 downto 0);
@@ -48,18 +48,30 @@ entity regfile is
 --           reg_out_6 : out STD_LOGIC_VECTOR(15 downto 0);
 --           reg_out_7 : out STD_LOGIC_VECTOR(15 downto 0)
            Adata : out STD_LOGIC_VECTOR(15 downto 0);
-           Bdata : out STD_LOGIC_VECTOR(15 downto 0)    
+           Bdata : out STD_LOGIC_VECTOR(15 downto 0)
            );
 end regfile;
 
 architecture Behavioral of regfile is
-    component decoder3to8
-        Port(
-                x0, x1, x2 : in STD_LOGIC;
-                z0, z1, z2, z3, z4, z5, z6, z7 : out STD_LOGIC
-            );
+    component decoder4to9 
+    Port ( sel : in STD_LOGIC_VECTOR (3 downto 0);
+           z0 : out STD_LOGIC;
+           z1 : out STD_LOGIC;
+           z2 : out STD_LOGIC;
+           z3 : out STD_LOGIC;
+           z4 : out STD_LOGIC;
+           z5 : out STD_LOGIC;
+           z6 : out STD_LOGIC;
+           z7 : out STD_LOGIC;
+           z8 : out STD_LOGIC
+           );
+end component;
+    component decoder1to2 is
+            Port ( input : in STD_LOGIC;
+                   outputA : out STD_LOGIC;
+                   outputB : out STD_LOGIC
+                   );
         end component;
-        
     component reg16
          Port(
                load: in STD_LOGIC;
@@ -77,19 +89,21 @@ architecture Behavioral of regfile is
                Z : out STD_LOGIC_VECTOR (15 downto 0));
         end component;
         
-    component mux8
+    component mux9 
         Port ( A : in STD_LOGIC_VECTOR(15 downto 0);
-               B : in STD_LOGIC_VECTOR(15 downto 0);
-               C : in STD_LOGIC_VECTOR(15 downto 0);
-               D : in STD_LOGIC_VECTOR(15 downto 0);
-               E : in STD_LOGIC_VECTOR(15 downto 0);
-               F : in STD_LOGIC_VECTOR(15 downto 0);
-               G : in STD_LOGIC_VECTOR(15 downto 0);
-               H : in STD_LOGIC_VECTOR(15 downto 0);           
-               S : in STD_LOGIC_VECTOR(2 downto 0);
-               Z : out STD_LOGIC_VECTOR(15 downto 0));
-       end component;
+                   B : in STD_LOGIC_VECTOR(15 downto 0);
+                   C : in STD_LOGIC_VECTOR(15 downto 0);
+                   D : in STD_LOGIC_VECTOR(15 downto 0);
+                   E : in STD_LOGIC_VECTOR(15 downto 0);
+                   F : in STD_LOGIC_VECTOR(15 downto 0);
+                   G : in STD_LOGIC_VECTOR(15 downto 0);
+                   H : in STD_LOGIC_VECTOR(15 downto 0); 
+                   I : in STD_LOGIC_VECTOR(15 downto 0);          
+                   S : in STD_LOGIC_VECTOR(3 downto 0);
+                   Z : out STD_LOGIC_VECTOR(15 downto 0));
+        end component;
        
+--       decoder outputs
         signal dc0: STD_LOGIC;
         signal dc1: STD_LOGIC;
         signal dc2: STD_LOGIC;
@@ -98,6 +112,9 @@ architecture Behavioral of regfile is
         signal dc5: STD_LOGIC;
         signal dc6: STD_LOGIC;
         signal dc7: STD_LOGIC;
+        signal dc8: STD_LOGIC;
+        
+--        register enables
         signal re0: STD_LOGIC;
         signal re1: STD_LOGIC;
         signal re2: STD_LOGIC;
@@ -106,6 +123,9 @@ architecture Behavioral of regfile is
         signal re5: STD_LOGIC;
         signal re6: STD_LOGIC;
         signal re7: STD_LOGIC;
+        signal re8: STD_LOGIC;
+        
+        --registers to mux
         signal rm0: STD_LOGIC_VECTOR(15 downto 0);
         signal rm1: STD_LOGIC_VECTOR(15 downto 0);
         signal rm2: STD_LOGIC_VECTOR(15 downto 0);
@@ -114,6 +134,7 @@ architecture Behavioral of regfile is
         signal rm5: STD_LOGIC_VECTOR(15 downto 0);
         signal rm6: STD_LOGIC_VECTOR(15 downto 0);
         signal rm7: STD_LOGIC_VECTOR(15 downto 0);
+        signal rm8: STD_LOGIC_VECTOR(15 downto 0);
         signal m0: STD_LOGIC_VECTOR(15 downto 0);
         signal m1: STD_LOGIC_VECTOR(15 downto 0);
         signal Z : STD_LOGIC_VECTOR(15 downto 0);
@@ -126,10 +147,10 @@ begin
     re5 <= dc5 and write;
     re6 <= dc6 and write;
     re7 <= dc7 and write;
-    dc      :   decoder3to8 port map (dst(2), dst(1), dst(0), dc0, dc1, dc2, dc3, dc4, dc5, dc6, dc7);
---    muxOut  :   mux8 port map(rm0, rm1, rm2, rm3, rm4, rm5, rm6, rm7, src, Z);
-    aMux    :   mux8 port map(rm0, rm1, rm2, rm3, rm4, rm5, rm6, rm7, Asrc, Adata);
-    BMux    :   mux8 port map(rm0, rm1, rm2, rm3, rm4, rm5, rm6, rm7, Bsrc, Bdata);
+    re8 <= dc8 and write;
+    dc      :   decoder4to9 port map (dst, dc0, dc1, dc2, dc3, dc4, dc5, dc6, dc7, dc8);
+    aMux    :   mux9 port map(rm0, rm1, rm2, rm3, rm4, rm5, rm6, rm7, rm8, Asrc, Adata);
+    BMux    :   mux9 port map(rm0, rm1, rm2, rm3, rm4, rm5, rm6, rm7, rm8, Bsrc, Bdata);
     r0      :   reg16 port map(re0, data, clock, rm0);
     r1      :   reg16 port map(re1, data, clock, rm1);
     r2      :   reg16 port map(re2, data, clock, rm2);
@@ -138,6 +159,7 @@ begin
     r5      :   reg16 port map(re5, data, clock, rm5);
     r6      :   reg16 port map(re6, data, clock, rm6);
     r7      :   reg16 port map(re7, data, clock, rm7);
+    r8      :   reg16 port map(re8, data, clock, rm8);
 --    dataInMux :  mux2 port map(data, Z, dataSrc, m0); 
 
 

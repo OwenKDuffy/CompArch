@@ -1,4 +1,30 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "U:/CS2022/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/LogicUnit16bit.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity LogicUnit16bit
-INFO: [VRFC 10-163] Analyzing VHDL file "U:/CS2022/CompArch/assignment_2/assignment_2.srcs/sim_1/new/ALU_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity ALU_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ArithmeticUnit16bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ArithmeticUnit16bit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/B input Logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity B_input_Logic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/FullAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FullAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/RippleCarryAdder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RippleCarryAdder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ZeroDetect.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ZeroDetect
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/decoder3to8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity decoder3to8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/entirety.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity entirety
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/function_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity function_Unit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux2
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux8
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/reg16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity reg16
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/enirety_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity entirety_tb

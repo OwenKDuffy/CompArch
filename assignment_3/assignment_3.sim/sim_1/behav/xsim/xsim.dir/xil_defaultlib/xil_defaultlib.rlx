@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/ALU_tb.vhd,1523455745,vhdl,,,,alu_tb,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ALU.vhd,1523455745,vhdl,,,,alu,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ArithmeticUnit16bit.vhd,1523455745,vhdl,,,,arithmeticunit16bit,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/B input Logic.vhd,1523455745,vhdl,,,,b_input_logic,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/FullAdder.vhd,1523455745,vhdl,,,,fulladder,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/LogicUnit16bit.vhd,1523455745,vhdl,,,,logicunit16bit,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/LogicUnitSlice.vhd,1523455745,vhdl,,,,logicunitslice,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/RippleCarryAdder.vhd,1523455745,vhdl,,,,ripplecarryadder,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd,1523455745,vhdl,,,,mux2,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/mux4_1bit.vhd,1523455745,vhdl,,,,mux4_1bit,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new/decoder1to2_tb.vhd,1523491815,vhdl,,,,decoder1to2_tb,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new/demux2_tb.vhd,1523490606,vhdl,,,,demux2_tb,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/decoder1to2.vhd,1523491687,vhdl,,,,decoder1to2,,,,,,,,
+C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/demux2.vhd,1523490899,vhdl,,,,demux2,,,,,,,,

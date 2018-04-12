@@ -44,13 +44,20 @@ component Shifter
  end component;
  
  signal H : STD_LOGIC_VECTOR(1 downto 0) := "00";
- signal input : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000";
+ signal input : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
  signal output : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
+uut : Shifter port map(H, input, output);
 stim_proc : process
     begin
-    
+    input <= "0000001111000000";
+    H <= "00";
+    wait for 15ns;
+    H <= "01";
+    wait for 15ns;
+    H <= "10";
+    wait for 15ns;
     end process;
 
 

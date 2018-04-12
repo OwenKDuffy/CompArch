@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../assignment_2.srcs/sources_1/imports/new/LogicUnit16bit.vhd" \
+"../../../../assignment_2.srcs/sources_1/imports/new/LogicUnitSlice.vhd" \
+"../../../../assignment_2.srcs/sources_1/new/mux4_1bit.vhd" \
+"../../../../assignment_2.srcs/sim_1/new/Logic_Unit_Tb.vhd" \
+
+# Do not sort compile order
+nosort

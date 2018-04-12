@@ -2,14 +2,327 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Mar 13 13:41:10 2018
-# Process ID: 8608
-# Current directory: U:/CS2022/CS2022/assignment_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10052 U:\CS2022\CS2022\assignment_2\assignment_2.xpr
-# Log file: U:/CS2022/CS2022/assignment_2/vivado.log
-# Journal file: U:/CS2022/CS2022/assignment_2\vivado.jou
+# Start of session at: Wed Apr 11 15:09:13 2018
+# Process ID: 8660
+# Current directory: C:/Users/Owen/Documents/GitHub/CompArch/assignment_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15096 C:\Users\Owen\Documents\GitHub\CompArch\assignment_2\assignment_2.xpr
+# Log file: C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/vivado.log
+# Journal file: C:/Users/Owen/Documents/GitHub/CompArch/assignment_2\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project U:/CS2022/CS2022/assignment_2/assignment_2.xpr
+open_project C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.xpr
 update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top shifter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
 synth_design -rtl -name rtl_1
+launch_simulation
+source shifter_tb.tcl
+restart
+run 60 ns
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Logic_Unit_Tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source Logic_Unit_Tb.tcl
+restart
+run 200 ns
+restart
+run 200 ns
+close_sim
+open_project C:/Users/Owen/OneDrive/Documents/CS2022/CompArch/assignment_2/assignment_2.xpr
+open_project C:/Users/Owen/OneDrive/CS2022/Assignment1mergeme/CS2022/assignment_2/assignment_2.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top entirety_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source entirety_tb.tcl
+create_project assignment_3 C:/Users/Owen/Documents/GitHub/CompArch/assignment_3 -part xc7k70tfbg484-2
+add_files -norecurse {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/function_Unit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux4.vhd {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/B input Logic.vhd} C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/entirety.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/reg16_tb.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/reg16.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ALU.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/RippleCarryAdder.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux8.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/LogicUnit16bit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/Shifter.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/mux4_1bit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/regfile.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ZeroDetect.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/LogicUnitSlice.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/FullAdder.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ArithmeticUnit16bit.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/entirety.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/entirety.vhd
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/entirety.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/ALU_tb.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/enirety_tb.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/RCA_tb.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/Logic_Unit_Tb.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/au_tb.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sim_1/new/shifter_tb.vhd}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+current_project assignment_2
+current_project assignment_3
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/entirety.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/regfile.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/function_Unit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ALU.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/Shifter.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ZeroDetect.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/mux4_1bit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/reg16_tb.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/entirety.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/regfile.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/function_Unit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ALU.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/Shifter.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ZeroDetect.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/mux4_1bit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/reg16_tb.vhd}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/LogicUnit16bit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux8.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ArithmeticUnit16bit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/reg16.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/LogicUnit16bit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux8.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/ArithmeticUnit16bit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/reg16.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/B input Logic.vhd}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/LogicUnitSlice.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/RippleCarryAdder.vhd] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/B input Logic.vhd} C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/LogicUnitSlice.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/RippleCarryAdder.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux4.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/FullAdder.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux4.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/FullAdder.vhd}
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/entirety.vhd
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/regfile.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/function_Unit.vhd
+current_project assignment_2
+current_project assignment_3
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/decoder3to8.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux4.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux2.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/mux8.vhd}
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/reg16.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ALU.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/Shifter.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ZeroDetect.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse {C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/ArithmeticUnit16bit.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/LogicUnitSlice.vhd C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/LogicUnit16bit.vhd}
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/new/mux4_1bit.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse {{C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/B input Logic.vhd}}
+current_project assignment_2
+current_project assignment_3
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/RippleCarryAdder.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+add_files -norecurse C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/FullAdder.vhd
+update_compile_order -fileset sources_1
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+synth_design -rtl -name rtl_1
+current_project assignment_2
+current_project assignment_3
+current_project assignment_2
+current_project assignment_3
+refresh_design
+current_project assignment_2
+current_project assignment_3
+refresh_design
+file mkdir C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/demux2.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/demux2.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new/demux2_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new/demux2_tb.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top demux2_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source demux2_tb.tcl
+relaunch_sim
+restart
+run 200 ns
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/decoder1to2.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/decoder1to2.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new/decoder1to2_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sim_1/new/decoder1to2_tb.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder1to2_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source decoder1to2_tb.tcl
+restart
+run 200 ns
+restart
+current_sim simulation_4
+close_sim
+current_sim simulation_5
+run 200 ns
+restart
+run 30 ns
+refresh_design
+set_property top decoder1to2 [current_fileset]
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+close_sim
+launch_simulation
+launch_simulation
+source decoder1to2_tb.tcl
+restart
+run 30 ns
+current_project assignment_2
+current_sim simulation_3
+current_project assignment_3
+set_property top regfile [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/decoder4to9.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/decoder4to9.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+update_compile_order -fileset sources_1
+current_project assignment_2
+update_compile_order -fileset sources_1
+current_project assignment_3
+refresh_design
+current_project assignment_2
+current_project assignment_3
+update_compile_order -fileset sources_1
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/mux9.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/mux9.vhd
+update_compile_order -fileset sources_1
+current_project assignment_2
+current_project assignment_3
+update_compile_order -fileset sources_1
+current_project assignment_2
+update_compile_order -fileset sources_1
+current_project assignment_3
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/datapath.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/datapath.vhd
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  C:/Users/Owen/Documents/GitHub/CompArch/assignment_2/assignment_2.srcs/sources_1/imports/new/entirety.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top datapath [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+current_project assignment_2
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+current_project assignment_3
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/Microprocessor.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/Microprocessor.vhd
+update_compile_order -fileset sources_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Microprocessor [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/Memory.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/Memory.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/ControlMem.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/ControlMem.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_design
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/mux8_1bit.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/mux8_1bit.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+close [ open C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/mux2_8bit.vhd w ]
+add_files C:/Users/Owen/Documents/GitHub/CompArch/assignment_3/assignment_3.srcs/sources_1/new/mux2_8bit.vhd
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design

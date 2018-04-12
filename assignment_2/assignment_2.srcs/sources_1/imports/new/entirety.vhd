@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity entirety is
+entity datapath is
 Port (
            dst : in STD_LOGIC_VECTOR(2 downto 0); 
            selectA : in STD_LOGIC_VECTOR(2 downto 0);
@@ -52,9 +52,9 @@ Port (
            n: out STD_LOGIC; 
            z : out STD_LOGIC
      );
-    end entirety;
+    end datapath;
     
-architecture Behavioral of entirety is
+architecture Behavioral of datapath is
     
     component mux2
        Port ( A : in STD_LOGIC_VECTOR (15 downto 0);
